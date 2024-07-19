@@ -13,8 +13,8 @@ public class GamePanel extends JPanel {
     private MouseInputs mouseInputs;
     private float xDelta = 100;
     private float yDelta = 100;
-    private float xDir = 0.01f;
-    private float yDir = 0.01f;
+    private float xDir = 1f;
+    private float yDir = 1f;
     private int frames = 0;
     private long lastCheck = 0;
     private Color color = Color.red;
@@ -53,7 +53,6 @@ public class GamePanel extends JPanel {
             System.out.println("FPS:" + frames);
             frames = 0;
         }
-        repaint();
     }
 
     private void updateRectangle() {
